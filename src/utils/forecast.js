@@ -15,7 +15,7 @@ const forecast = (latitude,longitude,callback) => {
             const data = body.current;
             callback(
                 undefined,
-                `${data.weather_descriptions[0]}. It is ${data.temperature} degrees. It feels like ${data.feelslike} degrees.`
+                `${data.weather_descriptions[0]}. It is ${data.temperature} degrees. It feels like ${data.feelslike} degrees. The humidity is ${data.humidity}% and chance of Precipitation is ${data.precip}%. The UV Index is ${data.uv_index}.`
             );
         }
     });
